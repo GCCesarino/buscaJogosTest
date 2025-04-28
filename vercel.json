@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main.ts",    // Ponto de entrada
+      "use": "@vercel/node"    // Runtime do Node.js
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",          // Todas as rotas
+      "dest": "src/main.ts"    // Redireciona para o NestJS
+    }
+  ]
+}
