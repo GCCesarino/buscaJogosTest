@@ -8,14 +8,17 @@ import { GamesModule } from './games/games.module';
 
 
 @Module({
-  imports: [TypeOrmModule.forRoot({
-    type: 'sqlite',
-    database: './sqlite/db.sqlite',
-    entities: [User],
-    synchronize: true,
-  }),
-  UsersModule,
-  GamesModule],
+  imports: [
+      /*TypeOrmModule.forRoot({
+      type: 'sqlite',
+      database: './sqlite/db.sqlite',
+      entities: [User],
+      synchronize: true,
+    }),
+    UsersModule,
+    */
+    GamesModule
+],
   controllers: [AppController],
   providers: [AppService],
 })
