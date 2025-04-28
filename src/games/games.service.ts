@@ -22,7 +22,7 @@ export class GamesService {
             throw new Error('Error fetching game details');
         }
     }
-
+    /*
     async findOneByName(gameName: string) {
         console.log("New request for game name = " + gameName);
     
@@ -40,9 +40,9 @@ export class GamesService {
             throw new Error('Error fetching game list');
         }
     }
-
+    */
     //se quiser pegar direto da api da steam (mais lento)
-    /*
+    
     async findOneByName(gameName: string) {
         console.log("New request for game name = "+ gameName);
         const filePath = "http://api.steampowered.com/ISteamApps/GetAppList/v0002/?key=STEAMKEY&format=json";
@@ -64,5 +64,5 @@ export class GamesService {
             throw new Error('Error fetching game list');
         }
     }
-    */
+    
 }
